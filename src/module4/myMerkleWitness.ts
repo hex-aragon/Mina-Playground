@@ -28,6 +28,7 @@ class Account extends Struct({
     return Poseidon.hash(Account.toFields(this));
   }
 
+  //포인트 더하기 함수 이후 어카운트 리턴
   addPoints(points: number) {
     return new Account({
       publicKey: this.publicKey,
